@@ -43,7 +43,7 @@ Param | Value | Info
 --- | --- | ---
 LEARNING_RATE | 0.01 |
 GAMMA | 0.95 | Discount rate
-EPSILON | 0.01 | Exploration rate
+EPSILON | 0.1 | Exploration rate
 
 
 Result
