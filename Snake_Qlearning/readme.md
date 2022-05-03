@@ -18,7 +18,7 @@ Introduction of Q learning
 
 Input
 ---------
-- The Q matrix is filled 0
+- The Q matrix is initially filled with 0s
 - The Q table updated every time that the agent makes the move and looks like an example below:
 -![Example](Qtable.png)
 
