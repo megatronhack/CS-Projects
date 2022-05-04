@@ -2,7 +2,7 @@ import random
 import numpy as np
 import pickle
 class RL():
-    def __init__(self, actions, e = 0.10, a = 0.95, g = 0.8):
+    def __init__(self, actions, e = 0.10, a = 0.95, g = 0.8):# a= learningrate, e= exploration rate, g = gamma rate
         self.Q = {}
         self.A = actions
         self.e = e
