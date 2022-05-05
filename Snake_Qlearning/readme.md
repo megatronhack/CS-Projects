@@ -41,9 +41,9 @@ Parameter settings
 
 Param | Value | Info
 --- | --- | ---
-LEARNING_RATE | 0.01 |
-GAMMA | 0.95 | Discount rate
-EPSILON | 0.1 | Exploration rate
+LEARNING_RATE | 0.05 |
+GAMMA | 0.80 | Discount rate
+EPSILON | 0.10 | Exploration rate
 
 
 Result
