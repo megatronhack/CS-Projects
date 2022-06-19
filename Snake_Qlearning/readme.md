@@ -1,4 +1,4 @@
-AI term project learns how to play snake game
+AI term project: Learn how to play the snake game
 ================================
 
 The solution uses Reinforcement Learning (Q-learning) approach.
