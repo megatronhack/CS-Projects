@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+<h1>Data Communication</h1>
+<div id="app"></div>
+
+<script type="text/babel">
+    class Parent extends React.Component {
+        state = {
+            num: 10,
+            str: "Hello from Parent!"
+        }
+
+        render() {
+            const { num, str } = this.state;
+            const arr = [1, 2, function(){console.log(1)}];
+            const obj = {name: "haha", age: 10};
+            return (
+                <div>
+                    <h3>This is Parent</h3>
+                    <p>My num is: { num }</p>
+                    <hr/>
+                    <Child numFromP={num}
+                           changeHandlerFn={this.onChangeHandler}
+                           myArr={arr[2]}
+                           myObj={obj}
+                           myStr={str}
+                           onDataHandlerFn={this.onDataHandler}
+                    />
+                </div>
+            )
+        }
+
+        onChangeHandler = (data) => {
+            console.log("changing.......", data)
+            this.setState( pre => ({num: pre.num + data}))
+        }
+
+        onDataHandler = dataFromGC => {
+            console.log(dataFromGC);
+        }
+    }
+
+    class Child extends React.Component {
+        render() {
+            // console.log(this.props.myArr) // ?
+            // console.log(this.props.changeHandlerFn) // ?
+            const { myStr } = this.props;
+            return (
+                <div>
+                    <h4>This is Child</h4>
+                    <p>The num from Parent is: {this.props.numFromP}</p>
+                    <div>
+                        <button onClick={this.onClickHandler}>change parent num + 10</button>
+                    </div>
+                    <hr/>
+                    {
+                        // <GrandChild strFromParent={this.props.myStr}/>
+                    }
+                    <GrandChild strFromParent={myStr}
+                                onDataHandlerFromP={this.props.onDataHandlerFn}
+                    />
+                </div>
+            )
+        }
+
+        onClickHandler = () => {
+            console.log("clicked");
+            console.log(this.props.changeHandlerFn) // ?
+            this.props.changeHandlerFn(10);
+            //  X this.props.numFromP = this.props.numFromP + 10;
+        }
+    }
+
+    class GrandChild extends React.Component {
+        render() {
+            const { strFromParent } = this.props;
+            return (
+                <div>
+                    <h5>This is GrandChild</h5>
+                    <p>The num from Parent is: {this.props.strFromParent}</p>
+                    <button onClick={
+                        () => {
+                            this.props.onDataHandlerFromP("Hello from GrandChild")
+                        }
+                    }>click me</button>
+                </div>
+            )
+        }
+    }
+
+    ReactDOM.render(
+        <Parent />,
+        document.getElementById("app")
+    )
+
+    // data communication
+    //  P -> C:
+    //      in P class: <C key={value} /> -> define
+    //      in C class: this.props.key    -> read
+    //  C -> P:
+    //      in P class: define a call, <C key=cb />
+    //      in C class: this.props.key (cb)
+    //  S -> S
+    //      C -> P & P -> C
+</script>
+</body>
+</html>
