@@ -6,10 +6,11 @@
 
 This is a Spring-based web application, an online food order website.
 
-It's deployed on my AWS server and can be accessed. Here is the [link](http://54.86.213.235/).
+It's deployed on my AWS EC2 server and can be accessed through the [link](http://54.86.213.235/).
 
+The [frontend](foodDash-web-frontend) is based on React and ANT design.
 
-The frontend is based on React JavaScript. The backend is implemented with Java Spring framework.
+The [backend](foodDash-backend) is implemented with Java Spring framework and Hibernate, with AWS MySQL database.
 
 # Frontend Features
 
@@ -18,7 +19,7 @@ The frontend is based on React JavaScript. The backend is implemented with Java 
 Clone the [frontend repo](foodDash-web-frontend), install JavaScript runtime environment [nodeJS](https://nodejs.org/en/)
 
 ```java
-//npm install required libraries from package.json
+//npm install required libraries from package.json if needed
 npm start
 ```
 
@@ -54,7 +55,7 @@ npm start
 
 
 
-# Backend 
+# [Backend](foodDash-backend)
 
 ## Spring MVC Framework  + Hibernate ORM 
 
