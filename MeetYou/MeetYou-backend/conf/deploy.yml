@@ -1,0 +1,10 @@
+elasticsearch:
+  address: "your gcp address"
+  username: "your username"
+  password: "your password"
+
+gcs:
+  bucket: "your gcs bucket name"
+
+token:
+  secret: "secret"
