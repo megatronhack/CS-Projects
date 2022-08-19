@@ -2,7 +2,7 @@
 
 ## [FoodDash](FoodDash)
 
-a Spring-based web application, an online food order website with ReactJS.
+a Spring-based web application, an online food order website with React JS.
 
 ## [MeetYou](MeetYou)
 
