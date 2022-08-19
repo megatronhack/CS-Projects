@@ -8,7 +8,7 @@ a Spring-based web application, an online food order website with ReactJS.
 
 a Go web service based social network web application with React JS.
 
-## [MovieRecommendation](IMDB Movie Recomendation Website)
+## [MovieRecommendation](MovieRecomendation)
 
 a [Streamlit](https://streamlit.io/)-based web application, a movie recommendation website using ML model with python.
 
