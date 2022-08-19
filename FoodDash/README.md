@@ -10,7 +10,7 @@ It's deployed on my AWS EC2 server and can be accessed through the [link](http:/
 
 The [frontend](foodDash-web-frontend) is based on React and ANT design.
 
-The [backend](foodDash-backend) is implemented with Java Spring framework and Hibernate, with AWS MySQL database.
+The [backend](foodDash-backend) is implemented with Java Spring framework and Hibernate, with AWS MySQL database and Hibernate Session Factory security.
 
 # Frontend Features
 
