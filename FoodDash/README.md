@@ -8,7 +8,7 @@ This is a Spring-based web application, an online food order website.
 
 It's deployed on my AWS EC2 server and can be accessed through the [link](http://54.86.213.235/).
 
-The [frontend](foodDash-web-frontend) is based on React and ANT design.
+The [frontend](foodDash-web-frontend) is based on React and [ANT design](https://ant.design/docs/react/introduce).
 
 The [backend](foodDash-backend) is implemented with Java Spring framework and Hibernate, with AWS MySQL database and Hibernate Session Factory security.
 
