@@ -25,13 +25,13 @@ npm start
 
 ## Interface
 
-![index page](C:\Users\Guanyu\Desktop\My github\Programming\StarLink\demo_image\UI.jpg)
+![index page](demo_image\UI.jpg)
 
 ## Find Satellite
 
-![index page](C:\Users\Guanyu\Desktop\My github\Programming\StarLink\demo_image\findsatellite.jpg)
+![index page](demo_image\findsatellite.jpg)
 
 ## Tracking GIF
 
-![index page](C:\Users\Guanyu\Desktop\My github\Programming\StarLink\demo_image\tracking.gif)
+![index page](demo_image\tracking.gif)
 
