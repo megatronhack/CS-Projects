@@ -20,7 +20,7 @@ A tinder style news android application with MVVM architecture using Jetpack bas
 
 AI project: Learn how to play the snake game using Q-Learning
 
-## [Movie Recomendation](Movie Recomendation)
+## [Movie Recomendation](MovieRecomendation)
 
 A python and Streamlit based web app using ML model through IMDB service.
 
